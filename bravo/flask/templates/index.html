@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ravolant</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+
+body {
+background-color: #87CEEB;
+}
+form{
+left: 35%;
+top: 40%;
+margin-left: -10%;
+position: absolute;
+margin-top: -10%;
+}
+
+table{
+left: 60%;
+top: 42%;
+margin-left: -10%;
+position: absolute;
+margin-top: -10%;
+}
+h1{
+left: 37%;
+position: absolute;
+}
+input[type=text], input[type=integer] {
+width: 120%;
+padding: 20px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc
+box-sizing: border-box;
+}
+input[type=submit] {
+width: 140%;
+padding: 20px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc
+box-sizing: border-box;
+}
+td {
+padding: 20px 20px;
+}
+#kram {
+width: 450px;
+height: auto;
+top: 37%;
+position: absolute;
+}
+#bibi {
+width: 450px;
+height: auto;
+top: 37%;
+left: 65%;
+position: absolute;
+}
+	</style>
+    </head>
+    <body>
+	<h1>Inscription en M2</h1>
+	<div>
+        <form action="/ajout" method = "POST">
+   <p>nom</p></label> <input type = "text" name = "nom" id="nom"/></p>
+   <p>prenom<p> <input type = "text" name = "prenom" id="prenom" /></p>
+   <p>age</p> <input type = "integer" name = "age" id="age"/></p>
+   <p><input type = "submit" value = "Submit" /></p>
+	</form>
+	</div>
+<img id="kram" alt="kram" src=https://media.tenor.com/OtNE3BH0sU8AAAAC/kameto-kcorp.gif)>
+<img id="bibi" alt="bibi" src=https://media.tenor.com/_D4WRMda9BMAAAAd/kametotv-kameto.gif)>
+
+<div>	
+<table>
+    <thead>
+    <tr>
+        <th>Nom		</th>
+        <th>Prenom	</th>
+        <th>Age		</th>
+   
+    </tr>
+    </thead>
+    <tbody>
+        {% for row in data %} 
+            <tr>
+                <td>{{row.Nom}}</td>
+                <td>{{row.Prenom}}</td>
+                <td>{{row.Age}}</td>
+                
+            </tr>
+        {% endfor %}        
+    </tbody>
+</table>	
+</div>
+
+</body>
+</html>
