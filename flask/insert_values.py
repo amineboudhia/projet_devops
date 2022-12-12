@@ -1,6 +1,6 @@
 import pymysql
 
-connection = pymysql.connect(host='localhost',user='root',password='',db='flask',cursorclass=pymysql.cursors.DictCursor)
+connection = pymysql.connect(host='localhost',user='root',password='root',db='flask',cursorclass=pymysql.cursors.DictCursor)
 cursor = connection.cursor()
 
 def inserto(nom,prenom,age):
