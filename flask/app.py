@@ -7,9 +7,9 @@ import sys
 from insert_values import inserto, get_data
 
 
-template_dir = os.path.abspath('templates')
+#template_dir = os.path.abspath('templates')
 
-app = Flask(__name__,template_folder=template_dir)
+app = Flask(__name__,template_folder="/home/devops/flask/flask/templates")
 
 
 @app.route("/")
