@@ -5,7 +5,7 @@ def get_connection():
 
     connection = pymysql.connect(host='localhost',
                              user='root',
-                             password='',
+                             password='root',
                              charset='utf8mb4',
                              cursorclass=pymysql.cursors.DictCursor)
 
@@ -31,7 +31,7 @@ except:
     print('la db existe déjà')
 
 
-connection_db= pymysql.connect(host='localhost',user='root',password='',db=db,cursorclass=pymysql.cursors.DictCursor)
+connection_db= pymysql.connect(host='localhost',user='root',password='root',db=db,cursorclass=pymysql.cursors.DictCursor)
 
 
 try:
